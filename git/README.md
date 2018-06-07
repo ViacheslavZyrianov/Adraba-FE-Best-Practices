@@ -50,43 +50,43 @@ We use next system that helps us a lot:
 Main idea was taken from git flow and was adopted to our needs
 
 ## Commit message
-First of all highly recommend you to read those amazing article that will change you thinking about coomit messages:
-- [What makes a good commit message?](https://hackernoon.com/what-makes-a-good-commit-message-995d23687ad)
-- [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
+First of all highly recommend you to read those amazing article that will change you thinking about commit messages:
+- [What makes a good git commit message?](https://hackernoon.com/what-makes-a-good-commit-message-995d23687ad)
+- [How to write a git commit message](https://chris.beams.io/posts/git-commit/)
 
-May be you ask yourself: `I never checked commit messages of other people and why do I need follow some rules to show just a message?` If you don't read git commit mesages in you probably didn't work with project that was maintained very long time, or you never fix some code after whole previous tead leave project.
+May be you ask yourself: `I never checked commit messages of other people and why do I need follow some rules to show just a message?` If you don't read git commit messages, you probably didn't work with project that was maintained for a very long time, or you never fixed some code after whole previous team left the project.
 
-But when you take project to finish it from some one else, history from good commit messages will help you to understand what was done, and may be your collegues already trid solution that you want apply to current feature.
+But when you take the project to finish it from someone else, history from good commit messages will help you to understand what was done, and maybe your colleagues already tried solution that you want apply to current feature.
 
 ## How to make good PR
-**Main goal is make good PR description, so any developer should be able to understand what was done** :+1:
+**Main goal is to make good PR description, so any other developer should be able to understand what was done** :+1:
 
-We assume that you usere Jira or some other tool for task treking where you may check ID of card with task.
+We assume that you use Jira or some other tool for task tracking where you may check ID of card with task.
 
 [Read here how to use Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
-To have good PR that your team mates will understand you should do in the right way next things:
-- right branch name
+To have good PR, that your teammates will understand, you should do next things correctly:
+- correct branch name
 - good PR name
 - good PR description
 - assign yourself
 - add labels
-- request review from our colegues
+- request review from our colleagues
 
 ### Right branch name
 So you have task from Jira, you should check next thing from your card for branch name:
-- Card type in Jira(Task, Bug)
+- Card type in Jira (Task, Bug)
 - Card Title
 - Card ID
 
-For example you have Card with ID `FE-122`, card type `Task` and title `Create Login form in cms`, in that case you should create branck with name like this:
+For example, you have card with ID `FE-122`, card type `Task` and card title `Create Login form in cms`, in that case you should create branch with name like this:
 `feature/FE-122-add-login-form-in-cms`
 
-Lets assume that your colegue take task from Jira with ID `FE-99`, type `Bug`, Title `Fix handling error with status 401`. He should create branch with name `bugfix/FE-99-fix-401-error-handling`
+Lets assume that your colleague take task from Jira with ID `FE-99`, type `Bug`, title `Fix handling error with status 401`. He should create branch with name `bugfix/FE-99-fix-401-error-handling`
 
-In that case you even don't need go to Jira to read deskription of task.
+In that case you don't even need to go to Jira to read description of the task.
 
-Lets assume that you see in Jira Bug `FE-231` and Bug `FE-243`, you know that they have same root of problem and when you solve first, second issue will be close automaticaly, name this branch `bugfix/FE-231-FE-243-fix-user-card-size`
+Lets assume that you see in Jira Bug `FE-231` and Bug `FE-243`, you know that they have the same root of problem and when you solve first, second issue will be closed automaticaly, name this branch `bugfix/FE-231-FE-243-fix-user-card-size`
 
 Don't make branch name too long, always try to use common sense :wink:
 
@@ -98,7 +98,7 @@ Good PR name should contain Jira Card ID and title of task:
 That's it... nothing special and magical
 
 ### Good PR description
-Just shortly deskribe what was done. For example next code will create easy to read description
+Just shortly describe what was done. For example, next code will create easy to read description
 ```
 #### Changelog:
 - Create login page with form
@@ -113,32 +113,31 @@ Just shortly deskribe what was done. For example next code will create easy to r
 - Add links to forgot password and registration pages
 - Show message in modal if login was failed
 
-Nice yeah?
+Nice, yeah?
 
 And any person who will review PR will know context of naming in your code, and what to test.
 
-**And last but very important thing...**
+**And last, but very important thing...**
 
 <p align="center">
   <img src="./screenshots/labels.png">
 </p>
 
 ### Assign yourself to PR
-When you ask your colegue:
+When you ask your colleague:
 
 `May you check my PR plz?`
 
-It will be much easy to find it if you will assign yourself and all people will see your avatar in PR list.
+It will be much easier to find it, if you assign yourself and all people will see your avatar in PR list.
 
 ### Add labels
-Sometime we have BE and FE in one repo, it will be much easy to differenciate PRs if they will have Labels with information about it. No need to write `bugfix` in PR name, if you may just add label `bugfix`
+Sometimes we have BE and FE in one repo, it will be much easier to differentiate PRs if they will have Labels with information about it. No need to write `bugfix` in PR name, if you can just add label `bugfix`
 
 <p align="center">
   <img src="./screenshots/wip-label.png">
 </p>
 
-If you work on big feature and want to ask your colegue to check PR after first implementation, you may add label `WIP` (Work in progress) to avoid situation when some one accident
-ly will merge your PR because it work already...
+If you work on big feature and want to ask your colleague to check PR after first implementation, you may add label `WIP` (Work in progress) to avoid situation when someone accidentally merged your PR because it work already...
 
 ### Request review from our colegues
-Instead of asking your colegues to review your PR, you may request review and they will receive notiication on email. You may ask to review several people
+Instead of asking your colleagues to review your PR, you may request review and they will receive notiication on email. You may ask to review several people
